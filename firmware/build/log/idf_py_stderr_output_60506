@@ -1,0 +1,10 @@
+Command: ninja flash
+
+A fatal error occurred: This chip is ESP32, not ESP32-S3. Wrong chip argument?
+CMake Error at /home/driftfire/Downloads/iot test2/iot test2/esp-idf/components/esptool_py/run_serial_tool.cmake:67 (message):
+  
+  /home/driftfire/.espressif/python_env/idf6.1_py3.13_env/bin/python;-m;esptool;--chip;esp32s3
+  failed.
+
+
+

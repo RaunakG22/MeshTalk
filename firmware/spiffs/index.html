@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MeshTalk Dashboard</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">MeshTalk</div>
+  <div class="grid">
+    <div class="panel">
+      <div class="stack">
+        <label>Name</label>
+        <div class="row">
+          <input id="name" type="text" placeholder="Your name" style="flex:1">
+          <button id="join" class="btn-primary">Join</button>
+        </div>
+      </div>
+      <div class="subtitle">Peers</div>
+      <ul id="peers"></ul>
+      <div class="subtitle">Chat</div>
+      <div id="chat"></div>
+      <div class="row">
+        <input id="msg" type="text" placeholder="Message" style="flex:1">
+        <button id="send">Send</button>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="subtitle">Call</div>
+      <div class="row">
+        <button id="call" class="btn-primary">Start Call</button>
+        <button id="hangup">Hang Up</button>
+      </div>
+      <div class="row" id="incomingBar" style="display:none">
+        <div id="incomingText" style="flex:1"></div>
+        <button id="accept" class="btn-primary">Accept</button>
+        <button id="reject">Reject</button>
+      </div>
+      <div class="row">
+        <label><input id="lowBw" type="checkbox"> Low bandwidth (240p)</label>
+        <label><input id="audioOnly" type="checkbox"> Audio-only</label>
+      </div>
+      <div class="row">
+        <video id="localVideo" autoplay playsinline muted></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="subtitle">Diagnostics</div>
+      <pre id="diag"></pre>
+    </div>
+  </div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

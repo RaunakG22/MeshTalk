@@ -1,0 +1,77 @@
+Command: cmake -G Ninja -B /home/driftfire/Downloads/iot test2/iot test2/firmware/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/driftfire/.espressif/python_env/idf6.1_py3.13_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=False /home/driftfire/Downloads/iot test2/iot test2/firmware
+CMake Warning at /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/git_submodules.cmake:4 (message):
+  Git executable was not found.  Git submodule checks will not be executed.
+  If you have any build issues at all, start by adding git executable to the
+  PATH and rerun cmake to not see this warning again.
+Call Stack (most recent call first):
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/idf.cmake:41 (include)
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:2 (include)
+
+
+info: /tmp/kconfgen_tmpo667n88z:11 CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM
+info: /tmp/kconfgen_tmpo667n88z:12 CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM
+Configuration Report               
+ ───────────────────────────────── 
+   Parser Version: 1               
+   Verbosity: default              
+   Defaults policy: sdkconfig      
+   Status: Finished successfully   
+                                   
+ ───────────────────────────────── 
+CMake Warning at /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory '/home/driftfire/Downloads/iot test2/iot
+  test2/esp-idf/components/esp_wifi/wifi_apps/roaming_app/include' belongs to
+  component esp_wifi but is being used by component wpa_supplicant.  It is
+  recommended to define the component dependency for wpa_supplicant on the
+  component esp_wifi, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component esp_wifi.
+Call Stack (most recent call first):
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/CMakeLists.txt:338 (__component_validation_run_checks)
+
+
+CMake Warning at /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory '/home/driftfire/Downloads/iot test2/iot
+  test2/esp-idf/components/esp_wifi/wifi_apps/roaming_app/src' belongs to
+  component esp_wifi but is being used by component wpa_supplicant.  It is
+  recommended to define the component dependency for wpa_supplicant on the
+  component esp_wifi, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component esp_wifi.
+Call Stack (most recent call first):
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/CMakeLists.txt:338 (__component_validation_run_checks)
+
+
+CMake Warning at /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory '/home/driftfire/Downloads/iot test2/iot
+  test2/esp-idf/components/wpa_supplicant/src' belongs to component
+  wpa_supplicant but is being used by component esp_wifi.  It is recommended
+  to define the component dependency for esp_wifi on the component
+  wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component wpa_supplicant.
+Call Stack (most recent call first):
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/CMakeLists.txt:338 (__component_validation_run_checks)
+
+
+CMake Warning at /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory '/home/driftfire/Downloads/iot test2/iot
+  test2/esp-idf/components/wpa_supplicant/esp_supplicant/src' belongs to
+  component wpa_supplicant but is being used by component esp_wifi.  It is
+  recommended to define the component dependency for esp_wifi on the
+  component wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component wpa_supplicant.
+Call Stack (most recent call first):
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/driftfire/Downloads/iot test2/iot test2/esp-idf/CMakeLists.txt:338 (__component_validation_run_checks)
+
+

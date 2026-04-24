@@ -1,0 +1,11 @@
+metric,value
+source_coding,huffman
+channel_coding,hamming74
+channel_model,bsc_channel
+sample_noise,0.08
+bit_error_rate,0.3310546875
+compression_ratio,1.9046733317833062
+code_rate,0.5710302708443973
+message_recovery_accuracy,0.0576171875
+source_bits,4301.0
+transmitted_bits,7532.0
